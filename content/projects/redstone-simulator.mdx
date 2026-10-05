@@ -1,0 +1,29 @@
+---
+title: "Redstone Logic Simulator"
+summary: "A browser-based circuit sandbox where you wire up gates, repeaters and lamps and watch signals travel tick by tick."
+date: "2026-07-12"
+tags: [typescript, canvas, simulation]
+role: "Solo project"
+status: "In progress"
+rarity: epic
+scene: redstone
+coverAlt: "Minecraft screenshot of redstone lamps powered by repeaters"
+sample: true
+repo: "https://github.com"
+---
+
+Redstone taught me more about logic gates than school did. This project turns that into a small web app.
+
+## Features
+
+- Place wires, torches, repeaters and lamps on a grid
+- Step through the simulation one tick at a time
+- Save and share circuits as a URL
+
+<Tip variant="redstone">
+  Signals weaken by one level per block, just like in the game. Repeaters reset them to full strength.
+</Tip>
+
+## Tech
+
+Rendering uses a single HTML canvas. The simulation runs on a fixed tick in a web worker so the UI never stutters.

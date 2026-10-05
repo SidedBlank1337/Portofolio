@@ -1,0 +1,25 @@
+---
+title: "SMP Discord Bot"
+summary: "A Discord bot for a friends' Minecraft server: whitelist requests, online player lists and daily build challenges."
+date: "2026-04-20"
+tags: [nodejs, discord, api]
+role: "Solo project"
+status: "Completed"
+rarity: rare
+scene: cherry
+coverAlt: "Minecraft screenshot of a cherry grove"
+sample: true
+repo: "https://github.com"
+---
+
+Our server needed a better way to handle whitelist requests than "DM whoever is online".
+
+## What it does
+
+- `/whitelist` sends a request that admins approve with one button
+- `/online` lists who is playing right now
+- Posts a daily build challenge at 6 pm
+
+<Tip variant="info" title="Lesson learned">
+  Rate limits are real. Cache server status for 30 seconds instead of polling on every command.
+</Tip>
