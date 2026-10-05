@@ -49,3 +49,11 @@ All shipped projects, skills and timeline entries are samples. Edit `content/pro
 | `scripts/fetch-assets.mjs` | Downloads every asset in `public/mc` (`npm run assets`) |
 
 The footer "World online" status is decorative and is not connected to a server.
+
+## Deploy to Vercel
+
+1. Push this repo to GitHub, GitLab or Bitbucket.
+2. In Vercel choose **Add New → Project**, import the repo and keep the defaults (Framework: Next.js, build `next build`).
+3. Optional: set `NEXT_PUBLIC_SITE_URL` to your custom domain for correct social-share links.
+
+Everything is pre-rendered at build time; no environment variables or backend are required.

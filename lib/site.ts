@@ -3,7 +3,10 @@ import type { SpriteName } from "@/components/art/sprites";
 export const site = {
   name: "Deepta",
   tagline: "Portfolio of Deepta: projects, skills and how to reach me",
-  url: "https://example.com",
+  // Set NEXT_PUBLIC_SITE_URL for a custom domain; Vercel fills in its own production URL otherwise.
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"),
   author: "Deepta",
   // Replace with your real address; the contact form opens a pre-filled email to it.
   email: "hello@example.com",
